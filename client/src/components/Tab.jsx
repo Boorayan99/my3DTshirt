@@ -24,7 +24,6 @@ const Tab = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
         className={`${isFilterTab ? 'w-2/3 h-2/3' : 'w11/12 h-11/12 object-contain'}`}
       />
 
-      
     </div>
   )
 }

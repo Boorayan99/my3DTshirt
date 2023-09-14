@@ -48,13 +48,13 @@ const Customizer = () => {
   }
 
   const handleSubmit = async (type) => {
-    if(!prompt) return alert('Enter a Prompt');
+    if(!prompt) return alert('Ntakusaidiaje usipobonga?');
 
     //Call our back-end to generate an AI image.
     try{ 
       setGeneratingImg(true);
 
-      const response = await fetch('http://localhost:8080/api/v1/dalle', {
+      const response = await fetch('https://threed-ai-tshirt.onrender.com/api/v1/dalle', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -99,7 +99,7 @@ const Customizer = () => {
         break;
     }
 
-    //After setting state, activeFilterTab is updated.
+    //After setting use state, activeFilterTab is updated.
     setActiveFilterTab((prevState) => {
       return {
         ...prevState,

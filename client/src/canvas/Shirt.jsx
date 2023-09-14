@@ -51,7 +51,6 @@ const Shirt = () => {
                     depthWrite={true}
                 />
             )}
-
         </mesh>
     </group>
   )
