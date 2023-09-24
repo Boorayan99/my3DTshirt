@@ -48,7 +48,7 @@ const Customizer = () => {
   }
 
   const handleSubmit = async (type) => {
-    if(!prompt) return alert('Ntakusaidiaje usipobonga?');
+    if(!prompt) return alert('Type... You scum!!');
 
     //Call our back-end to generate an AI image.
     try{ 
@@ -177,4 +177,4 @@ const Customizer = () => {
   )
 }
 
-export default Customizer
+export default Customizer;
